@@ -20,7 +20,7 @@ public class Runner {
 
         packCandyInThePresent(newYearPresent, caramel, chocolate, jellybean, lollipop);
 
-        System.out.println("Present's total weight is " + calculatePresentWeight(newYearPresent) + " grams.\n");
+        newYearPresent.printWeight();
 
         try {
             sortPresentByParameter(newYearPresent, SortingParameter.WEIGHT);

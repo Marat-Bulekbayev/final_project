@@ -5,6 +5,8 @@ import model.candy.Candy;
 import java.util.ArrayList;
 import java.util.List;
 
+import static util.PresentManager.calculatePresentWeight;
+
 public class Present {
 
     private List<Candy> candies;
@@ -29,6 +31,10 @@ public class Present {
             System.out.println("\t" + candy.toString());
         }
         System.out.println();
+    }
+
+    public void printWeight() {
+        System.out.println("Present's total weight is " + calculatePresentWeight(this) + " grams.\n");
     }
 
     @Override
