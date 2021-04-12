@@ -23,6 +23,14 @@ public class Present {
         return this.totalWeight;
     }
 
+    public void printPresentContent() {
+        System.out.println("Present:");
+        for (Candy candy : this.candies) {
+            System.out.println("\t" + candy.toString());
+        }
+        System.out.println();
+    }
+
     @Override
     public String toString() {
         return "Present: " + "\n" + candies;

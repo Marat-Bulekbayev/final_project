@@ -24,9 +24,9 @@ public class Runner {
 
         try {
             sortPresentByParameter(newYearPresent, SortingParameter.WEIGHT);
-            System.out.println(newYearPresent + "\n");
+            newYearPresent.printPresentContent();
             sortPresentByParameter(newYearPresent, SortingParameter.SUGAR_PERCENTAGE);
-            System.out.println(newYearPresent + "\n");
+            newYearPresent.printPresentContent();
             findCandyBySugarPercentage(newYearPresent, 30, 75);
         } catch (ParameterNotFoundException | NegativePercentageRangeException e) {
             e.printStackTrace();
